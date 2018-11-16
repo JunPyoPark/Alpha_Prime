@@ -1,0 +1,259 @@
+[{
+    "name": "이동평균선",
+    "indicators": "SMA",
+    "input_data" : ["close"],
+    "graph_location": "Main",
+    "num_figures" : 0,
+    "configuration" :
+      {
+        "widget_list":
+          "11111"
+        ,
+        "configure": [
+          [
+            "MA1",
+            5,
+            "#cf0c39"
+          ],
+          [
+            "MA2",
+            20,
+            "#212dd1"
+          ],
+          [
+            "MA3",
+            0,
+            "#396b3d"
+          ],
+          [
+            "MA4",
+            0,
+            "#caffc9"
+          ],
+          [
+            "MA5",
+            0,
+            "#7154ba"
+          ],
+          [
+            "MA6",
+            0,
+            "#caffc9"
+          ],
+          [
+            "MA7",
+            0,
+            "#caffc9"
+          ],
+          [
+            "MA8",
+            0,
+            "#caffc9"
+          ]
+        ]
+      }
+  },
+  {
+    "name": "볼린저밴드",
+    "indicators": "BBANDS",
+    "input_data" : ["close"],
+    "graph_location": "Main",
+    "num_figures" : 3,
+    "configuration" :
+      {
+        "widget_list":
+          "22333"
+        ,
+        "configure": [
+          [
+            "기간",
+            20
+          ],
+          [
+            "승수",
+            2
+          ],
+          [
+            "Upper",
+            "#dd060a"
+          ],
+          [
+            "Middle",
+            "#2c5aff"
+          ],
+          [
+            "Lower",
+            "#12b41d"
+          ]
+        ]
+      }
+  },
+  {
+    "name": "이격도",
+    "indicators": "DISPARITY",
+    "num_figures": 0,
+    "input_data" : ["close"],
+    "graph_location": "Sub",
+    "configuration" :
+      {
+        "widget_list":
+          "1"
+        ,
+        "configure": [
+          [
+            "기간",
+            20,
+            "#dd060a"
+          ]
+        ]
+      }
+
+  },
+  {
+    "name": "바이너리 파동",
+    "indicators": "BINWAVE",
+    "num_figures": 0,
+    "input_data" : ["high","low","close"],
+    "graph_location": "Sub",
+    "configuration" :
+      {
+        "widget_list":
+          "1"
+        ,
+        "configure": [
+          [
+            "기간",
+            20,
+            "#dd060a"
+          ]
+        ]
+      }
+
+  },
+  {
+    "name": "바이너리 파동_custom",
+    "indicators": "Custom_BINWAVE",
+    "num_figures": 0,
+    "input_data" : ["high","low","close"],
+    "graph_location": "Sub",
+    "configuration" :
+      {
+        "widget_list":
+          "1"
+        ,
+        "configure": [
+          [
+            "기간",
+            20,
+            "#dd060a"
+          ]
+        ]
+      }
+
+  },
+  {
+    "name": "RSI",
+    "indicators": "RSI",
+    "num_figures": 0,
+    "input_data" : ["close"],
+    "graph_location": "Sub",
+    "configuration" :
+      {
+        "widget_list":
+          "1"
+        ,
+        "configure": [
+          [
+            "기간",
+            14,
+            "#dd060a"
+          ]
+        ]
+      }
+  },
+  {
+    "name": "RVI",
+    "indicators": "RVI",
+    "num_figures": 0,
+    "input_data" : ["close"],
+    "graph_location": "Sub",
+    "configuration" :
+      {
+        "widget_list":
+          "1"
+        ,
+        "configure": [
+          [
+            "기간",
+            9,
+            "#dd060a"
+          ]
+        ]
+      }
+  },
+  {
+    "name": "MACD",
+    "indicators": "MACD",
+    "num_figures": 2,
+    "input_data" : ["close"],
+    "graph_location": "Sub",
+    "configuration" :
+      {
+        "widget_list":
+          "22433"
+        ,
+        "configure": [
+          [
+            "단기",
+            12
+          ],
+          [
+            "장기",
+            26
+          ],
+          [
+            "신호",
+            9,
+            "#dd060a"
+          ],
+          [
+            "MACD",
+            "#2c5aff"
+          ],
+          [
+            "차이",
+            "#12b41d"
+          ]
+        ]
+      }
+  },
+  {
+    "name": "Stochastic Slow",
+    "indicators": "STOCH",
+    "num_figures": 2,
+    "input_data" : ["high","low","close"],
+    "graph_location": "Sub",
+    "configuration" :
+      {
+        "widget_list":
+          "211"
+        ,
+        "configure": [
+          [
+            "기간",
+            5
+          ],
+          [
+            "%K",
+            3,
+            "#cf0c39"
+          ],
+          [
+            "%D",
+            3,
+            "#dd060a"
+          ]
+        ]
+      }
+  }
+  ]

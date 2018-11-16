@@ -1,0 +1,51 @@
+[{
+    "name": "이동평균선 크로스",
+    "Buy_signal" : ["Crossup",["SMA", [5]],["SMA", [20]]],
+    "Sell_signal" : ["Crossdown",["SMA", [5]],["SMA", [20]]]
+  },
+  {
+    "name": "MACD 기준선",
+    "Buy_signal" : ["Crossup",["MACD",0,[12,26,9]],0],
+    "Sell_signal" : ["Crossdown",["MACD",0,[12,26,9]],0]
+  },
+  {
+    "name": "Stochastics 기준선",
+    "Buy_signal" : ["Crossup",["STOCH",0,[5,3,3]],20],
+    "Sell_signal" : ["Crossdown",["STOCH",0,[5,3,3]],80]
+  },
+  {
+    "name": "Stochastics 크로스",
+    "Buy_signal" : ["Crossup",["STOCH",0,[5,3,3]],["STOCH",1,[5,3,3]]],
+    "Sell_signal" : ["Crossdown",["STOCH",0,[5,3,3]],["STOCH",1,[5,3,3]]]
+  },
+  {
+    "name": "이격도",
+    "Buy_signal" : ["Crossup",["DISPARITY", [20]],98],
+    "Sell_signal" : ["Crossdown",["DISPARITY", [20]],106]
+  },
+  {
+    "name": "MACD 크로스",
+    "Buy_signal" : ["Crossup",["MACD",0,[12,26,9]],["MACD",1,[12,26,9]]],
+    "Sell_signal" : ["Crossdown",["MACD",0,[12,26,9]],["MACD",1,[12,26,9]]]
+  },
+  {
+    "name": "RSI 기준선",
+    "Buy_signal" : ["Crossdown",["RSI", [14]], 30],
+    "Sell_signal" : ["Crossup",["RSI", [14]], 70]
+  },
+  {
+    "name": "RVI 기준선",
+    "Buy_signal" : ["Crossdown",["RVI", [9]], 40],
+    "Sell_signal" : ["Crossup",["RVI", [9]], 60]
+  },
+  {
+    "name": "Binary Wave",
+    "Buy_signal" : ["Crossup",["BINWAVE", [20]], 0],
+    "Sell_signal" : ["Crossdown",["BINWAVE", [20]], 0]
+  },
+  {
+    "name": "Custom Binary Wave",
+    "Buy_signal" : ["Crossup",["Custom_BINWAVE", [20]], 1],
+    "Sell_signal" : ["Crossdown",["Custom_BINWAVE", [20]], -1]
+  }
+]
